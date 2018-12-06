@@ -5,7 +5,7 @@ info:
     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net,
     #swagger](http://swagger.io/irc/).      For this sample, you can use the api
     key `special-key` to test the authorization     filters.
-  version: 1.0.0
+  version: 1.0.1
   title: Swagger Petstore
   termsOfService: 'http://swagger.io/terms/'
   contact:
@@ -13,11 +13,10 @@ info:
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-host: petstore.swagger.io
-basePath: /v2
+host: petstore.digi-thq.com
+basePath: /v1
 schemes:
   - https
-  - http
 tags:
   - name: pet
     description: Everything about your Pets
@@ -38,7 +37,7 @@ paths:
         - pet
       summary: Add a new pet to the store
       description: >-
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        Add a new pet to the store
       operationId: addPet
       consumes:
         - application/json
